@@ -30,6 +30,7 @@
 
 from .replace_text_substitution import ReplaceTextSubstitution
 from .execute_process_remote_ssh import ExecuteProcessRemoteSSH
+from .docker_run_remote_ssh import DockerRunRemoteSSH
 from .node_remote_ssh import NodeRemoteSSH
 from .launch_remote_ssh import LaunchRemoteSSH
 from .flexible_frontend_launch_defaults import FlexibleFrontendLaunchDefaults
@@ -39,6 +40,7 @@ from .install_remote_ssh import copy_install_space, copy_single_package_install
 __all__ = [
     'ReplaceTextSubstitution',
     'ExecuteProcessRemoteSSH',
+    'DockerRunRemoteSSH',
     'NodeRemoteSSH',
     'LaunchRemoteSSH',
     'FlexibleFrontendLaunchDefaults',

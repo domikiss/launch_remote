@@ -23,6 +23,13 @@ add_executable(remote_process_handler
 ament_target_dependencies(remote_process_handler
   rclcpp
 )
+# Remote docker process handler
+add_executable(remote_docker_process_handler
+  src/remote_docker_process_handler.cpp
+)
+ament_target_dependencies(remote_docker_process_handler
+  rclcpp
+)
 
 #############
 ## INSTALL ##
@@ -31,6 +38,7 @@ ament_target_dependencies(remote_process_handler
 # Remote process handler
 install(TARGETS
   remote_process_handler
+  remote_docker_process_handler
   DESTINATION lib/${PROJECT_NAME}
 )
 
